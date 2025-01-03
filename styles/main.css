@@ -572,7 +572,7 @@ a.content-link {
 /** CONTACT **/
 .contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));;
     gap: 1rem;
 }
 
@@ -607,12 +607,17 @@ a.content-link {
 .contact-block {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 0.5rem;
+
+    width: 100%;
 }
 
 .input-label-combo {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 1rem;
 
     text-align: start;
@@ -629,8 +634,8 @@ legend {
 input[type='text'],
 input[type='email'],
 textarea {
-    font-size: clamp(0.7rem, 5vw, 1.2em);
-    padding: 0.9em 2em;
+    font-size: clamp(0.7rem, 5vw, 1.1em);
+    padding: 0.9em 1.3em;
 
     background-color: transparent;
     color: var(--white);
@@ -703,15 +708,6 @@ input[type='checkbox']:checked ~ label {
 }
 
 @media (max-width: 968px) {
-    .contact-block {
-        display: block;
-        width: 100%;
-    }
-
-    .input-label-combo {
-        flex-basis: 100%;
-    }
-
     .contact-block > .input-label-combo:nth-child(1) {
         margin-bottom: 1rem;
     }
