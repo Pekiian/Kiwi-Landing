@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Own Styles-->
     <link rel="shortcut icon" href="./images/kiwi.png" type="image/png" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -23,11 +24,11 @@
 
     <a href="#" id="goToTop"><i class="arrow-top"></i></a>
 
-      <div class="hamburger" id="hamburger">
+      <!-- <div class="hamburger" id="hamburger">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
-      </div>
+      </div> -->
 
     <main class="introduction" id="introduction">
       <h1>Kiwi <span class="break">ConsultorIA</span></h1>
@@ -40,7 +41,7 @@
     </main>
 
     <section class="problems-section container" id="problems">
-      <h2>No aplicar IA <span class="bold">te está dejando atrás</span>.</h2>
+      <h2 id="short-problem">No aplicar IA <span class="bold">te está dejando atrás</span>.</h2>
     </section>
 
     <section class="problems-section container">
@@ -233,7 +234,7 @@
           </div>
 
           <p>
-            Capacitaciones a medida en el uso de las mejores Herramientas de IA para optimizar procesos y obtener resultados al instante
+            Capacitaciones a medida en el uso de las mejores Herramientas de IA para obtener resultados al instante
           </p>
         </div>
 
@@ -336,7 +337,7 @@
       </div>
   </section>  
 
-  <section class="" id="partners">
+  <section class="container" id="partners">
     <h2 class="section-title">Nuestros Partners</h2>
     <h3 class="section-subtitle">Empresas que nos acompañan para que podamos darte el mejor servicio posible</h3>
 
@@ -348,18 +349,20 @@
 
   <div class="separator"></div>
 
-    <section class="contact two-col-section" id="contact">
+    <section class="contact" id="contact">
       <div class="heading" id="contact-heading">
-        <h2 class="contact-title">¡Contactanos!</h2>
+        <h2 class="contact-title">Contactanos</h2>
         <h3 class="contact-subtitle">
-          Y veamos juntos <span class="break">como podemos ayudarte</span>
+          y veamos juntos <span class="break">como podemos ayudarte</span>
         </h3>
       </div>
 
-      <form action="" method="POST" class="contact-form container">
+      <form action="" class="contact-form container">
+        <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+
         <div class="contact-block" id="intro-block">
           <div class="input-label-combo">
-            <label for="name" class="mb-1">Nombre y/o Empresa: </label>
+            <label for="name" class="">Nombre y/o Empresa: </label>
             <input
               type="text"
               name="name"
@@ -369,7 +372,7 @@
           </div>
 
           <div class="input-label-combo">
-            <label for="email" class="mb-1">Email: </label>
+            <label for="email" class="">Tu Email: </label>
             <input
               type="email"
               name="email"
@@ -386,7 +389,7 @@
           <textarea
             name="description"
             id="description"
-            placeholder="Somos una empresa de logística y buscamos automatizar la gestión de inventarios y optimizar las rutas..."
+            placeholder=""
           ></textarea>
         </div>
 
@@ -394,37 +397,37 @@
           <legend>Estoy interesado en:</legend>
           <div class="intereses">
             <article class="interes interes1">
-              <input type="checkbox" id="interes1" />
+              <input type="checkbox" id="interes" name="CRM"/>
               <label for="interes1"> CRM </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes2" />
-              <label for="interes2"> ChatBots</label>
+              <input type="checkbox" id="interes" name="ChatBots"/>
+              <label for="interes2"> ChatBots </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes4" />
+              <input type="checkbox" id="interes" name="Capacitaciones"/>
               <label for="interes4"> Capacitaciones </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes4" />
+              <input type="checkbox" id="interes" name="Asistente Virtual"/>
               <label for="interes4"> Asistente Virtual </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes3" />
+              <input type="checkbox" id="interes" name="Análisis y Minería de Datos"/>
               <label for="interes3"> Análisis y Minería de Datos </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes4" />
+              <input type="checkbox" id="interes" name="Generador de Presentaciones"/>
               <label for="interes4"> Generador de Presentaciones </label>
             </article>
 
             <article class="interes interes1">
-              <input type="checkbox" id="interes4" />
+              <input type="checkbox" id="interes" name="Otras"/>
               <label for="interes4"> Otras </label>
             </article>
           </div>
@@ -441,12 +444,7 @@
               <h2>Kiwi ConsultorIA</h2>
               <p> Potenciamos empresas a través de Inteligencia Artificial y Automatizaciones.</p>
           </div>
-  
-          <!-- <div class="links-box">
-              <a href="./legales/terminos.html">Términos y condiciones</a>
-              <a href="./legales/privacidad.html">Políticas de Privacidad</a>
-          </div> -->
-  
+
           <div class="links-box justify-right">
               <a href="https://www.linkedin.com/company/kiwi-consultoria" target="_blank"><img src="https://cdn.prod.website-files.com/65c39c8aee4ff1f31a820ce3/65cac6100a09fdcd971c391e_LinkedIn.svg" alt="Logo de LinkedIn" class="icon"></a>
               <a href="https://wa.link/1qsvx6" target="_blank"><img src="./images/icons/whatsapp.svg" alt="Logo de WhatsApp" class="icon"></a>

@@ -4,13 +4,24 @@
 
 ### 1.0
 - Form:
-    - [ ] Sweet Alert.
-    - [ ] Validación de errores: https://www.geeksforgeeks.org/create-a-contact-form-using-html-css-javascript/.
+    - [x] Sweet Alert.
+    - [x] Validación de errores: https://www.geeksforgeeks.org/create-a-contact-form-using-html-css-javascript/.
     - [ ] Enviar form.
+- Responsiveness:
+    - [x] Stats.
+    - [x] Soluciones.
+    - [x] Roadmap.
+    - [ ] Empresas  .
+    - [x] Partners.
+    - [x] Contacto.
+    - [x] Footer. 
+- [ ] Flecha de "Seguir bajando".
 
 ### 2.0
 - [ ] Mudar a React.
 - [ ] Lenis Scroll.
+- [ ] Fondo de kiwis:
+    - https://codepen.io/udyux/pen/oxYzJo.
 - [ ] Hacer Kiwi-Bot en la página (inspiración en Aionixs-Bot). 
 
 ## Ideas
