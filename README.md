@@ -12,16 +12,18 @@
     - [x] Soluciones.
     - [x] Roadmap.
     - [x] Empresas:
-        - [ ] Bolitas (la seleccionada un kiwi).
+        - [x] Bolitas (la seleccionada un kiwi).
     - [x] Partners.
     - [x] Contacto.
     - [x] Footer. 
 - [x] Flecha de "Seguir bajando".
 
 ### 1.5
-- [ ] Navegación fija en una bolita.
-- [ ] Empresas-Trabajamos Slider.
+- [ ] Navegación fija en una bolita: https://codepen.io/b0y/pen/xxEYGXW.
 - [ ] Fondo de Kiwis en la Home.
+- [ ] Sección de problemas con fade on scroll.
+- [ ] Empresas-Trabajamos Slider.
+
 
 ### 2.0
 - [ ] Mudar a React.

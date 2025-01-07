@@ -22,7 +22,7 @@ document.querySelector('.contact-form').addEventListener('submit', async (e) => 
     }
 
     if (description === '') {
-      sendError('Por favor, describinos tu problema así podemos ayudarte mejor')
+      sendError('Por favor, describinos tu problema, así podemos ayudarte mejor')
       isValid = false
     }
 
