@@ -11,11 +11,17 @@
     - [x] Stats.
     - [x] Soluciones.
     - [x] Roadmap.
-    - [ ] Empresas  .
+    - [x] Empresas:
+        - [ ] Bolitas (la seleccionada un kiwi).
     - [x] Partners.
     - [x] Contacto.
     - [x] Footer. 
-- [ ] Flecha de "Seguir bajando".
+- [x] Flecha de "Seguir bajando".
+
+### 1.5
+- [ ] Navegación fija en una bolita.
+- [ ] Empresas-Trabajamos Slider.
+- [ ] Fondo de Kiwis en la Home.
 
 ### 2.0
 - [ ] Mudar a React.
@@ -29,3 +35,5 @@ Fancy background: https://codepen.io/enbee81/pen/WNdKLBY
 Fancy underline: https://codepen.io/enbee81/pen/popZGoX
 Fondo en letras: https://codepen.io/hkmDesigner/pen/zwJPgL
 Flickering light: https://codepen.io/mandymichael/pen/aJLYVz
+Botones animados: https://codepen.io/bato-web-agency/pen/mybMmOB
+Swiper JS: https://codepen.io/bato-web-agency/pen/OPLxQWx.

@@ -1,11 +1,12 @@
 /**  SECTIONS **/
-section, main {
+section,
+main {
     text-align: center;
     margin-bottom: 5rem;
     padding-top: 2rem;
 }
 
-section { 
+section {
     min-height: 80vh;
 }
 
@@ -45,6 +46,7 @@ main {
 .introduction {
     display: grid;
     place-content: center;
+    gap: 2rem;
     text-align: center;
 
     background: linear-gradient(-45deg, var(--black), var(--main-grey));
@@ -67,7 +69,34 @@ main {
 .introduction h2 {
     font-size: clamp(1rem, 2.5vw, 2rem);
     color: #afafaf;
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0;
+}
+
+.arrow-down {
+    width: 30px;
+    height: 30px;
+
+    margin: auto;
+
+    border-right: 4px solid lightgray;
+    border-bottom: 4px solid lightgray;
+
+    transform: rotate(15deg);
+
+    animation: arrowDownAnimation 1s ease-in-out infinite;
+}
+
+/* Arrow animation */
+@keyframes arrowDownAnimation {
+    0% {
+        transform: translateY(0) rotate(45deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
 }
 
 /** PROBLEMAS QUE IDENTIFICAMOS **/
@@ -85,7 +114,7 @@ main {
 }
 
 .problems-section h2 {
-    font-size: clamp(1.8rem, 6vw, 3.5rem); 
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
     line-height: 1.4;
 }
 
@@ -173,7 +202,7 @@ main {
     height: 54px;
     width: 20vw;
 
-    font-size: clamp(.8rem, 5vw, 1.2rem);
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
     font-weight: 400;
 
     color: #333;
@@ -187,7 +216,7 @@ main {
 .radio-tab[type='radio']:checked + label {
     color: #1db555;
     text-shadow: 0 0 20px #21d964;
-    font-size: clamp(.9rem, 5vw, 1.3rem);
+    font-size: clamp(0.9rem, 5vw, 1.3rem);
 }
 
 .selector {
@@ -272,10 +301,10 @@ main {
 
 @media (max-width: 568px) {
     .active-grid {
-        display: flex!important;
+        display: flex !important;
         flex-direction: column;
         gap: 1rem;
-    } 
+    }
 }
 
 @media (max-width: 447px) {
@@ -284,7 +313,7 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: .5rem;
+        gap: 0.5rem;
     }
 }
 
@@ -389,7 +418,7 @@ main {
     margin-top: 1rem;
     text-align: left;
 
-    font-size: clamp(.6rem, 4vw, 1rem);
+    font-size: clamp(0.6rem, 4vw, 1rem);
 }
 
 .timeline-number {
@@ -398,7 +427,7 @@ main {
     color: #21d964;
 }
 
-a.content-link {
+.content-link {
     display: block;
     text-decoration: none;
     color: inherit;
@@ -463,24 +492,25 @@ a.content-link {
 
 /** CON QUÉ EMPRESAS TRABAJAMOS **/
 .empresas-trabajamos {
-    margin: 0 auto;
+    min-height: 90vh;
+    padding: 3rem auto;
 }
 
 /* Carousel Container */
 .cards-carousel {
     overflow: hidden;
-    position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 100%;
-    height: 800px;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 600px;
 
     -webkit-transform: perspective(1000px) scale(1);
     -moz-transform: perspective(500px) scale(1);
-         transform: perspective(500px) scale(1);
+    transform: perspective(500px) scale(1);
 }
 
 /* Individual Cards */
@@ -488,16 +518,15 @@ a.content-link {
     position: absolute;
 
     flex: 0 0 70%; /* Centered card-carousel size */
-    max-width: 400px;
+    max-width: 30%;
 
     padding: 20px;
 
     text-align: center;
-    /* border: 1px solid #1db555; */
     border-radius: 20px;
 
     cursor: pointer;
-    box-shadow: 0 0px 10px rgb(29,181,85,0.8);
+    box-shadow: 0 0px 10px rgb(29, 181, 85, 0.8);
 
     transform-origin: center;
     transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
@@ -509,11 +538,13 @@ a.content-link {
 
 .card-carousel h4 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+
+    margin-bottom: 2rem;
 }
 
 .card-carousel p {
-    font-size: 1.6em;
+    font-size: clamp(1.3rem, 4vw, 1.6em);
     text-align: center;
 }
 
@@ -552,6 +583,88 @@ a.content-link {
     transform: scale(0.7) translateX(0%);
 }
 
+/* Carousel nav */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-indicator {
+    width: 20px;
+    height: 20px;
+
+    margin: 0 5px;
+
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-indicator.current-slide {
+    background-color: #83e051; /* Kiwi green color */
+    border: 1px solid black;
+
+    box-shadow: 0 0 10px rgba(120, 177, 89, 0.5); /* Light glow for the kiwi effect */
+    transform: scale(1.1);
+}
+
+.carousel-indicator.current-slide::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #fff; /* A white dot representing the inner part of the kiwi */
+    border: 0.5px solid black;
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.carousel-indicator:hover {
+    background-color: #9cb88d;
+}
+
+.carousel-indicator.current-slide.animate {
+    animation: kiwiPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes kiwiPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(120, 177, 89, 0.5);
+    }
+    50% {
+        transform: scale(1.4);
+        box-shadow: 0 0 20px rgba(120, 177, 89, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(120, 177, 89, 0.5);
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-carousel {
+        max-width: 40%;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-carousel {
+        max-width: 50%;
+    }
+}
+
 /** PARTNERS **/
 #partners {
     place-content: center;
@@ -572,7 +685,7 @@ a.content-link {
 /** CONTACT **/
 .contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     gap: 1rem;
 }
 
@@ -695,8 +808,8 @@ legend {
     font-size: clamp(0.7rem, 5vw, 1.2em);
     font-weight: 400;
 
-    word-wrap: break-word;
-    hyphens: auto;
+    /* word-wrap: break-word;
+    hyphens: auto; */
 }
 
 .interes:has(> input[type='checkbox']:checked) {
@@ -726,12 +839,15 @@ input[type='checkbox']:checked ~ label {
         text-shadow: 0px 0px 15px #2da92d, 0px 0px 15px #34c134, 0px 0px 15px #57c74d;
     }
 }
-  
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /** Media Queries **/
 @media (max-width: 768px) {

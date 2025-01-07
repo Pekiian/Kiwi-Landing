@@ -90,6 +90,7 @@ window.addEventListener('scroll', () => {
 
 //* Cards
 const cards = document.querySelectorAll('.card-carousel')
+const indicators = document.querySelectorAll('.carousel-indicator')
 let currentIndex = 0
 
 const updateCarousel = () => {
@@ -106,15 +107,28 @@ const updateCarousel = () => {
             card.classList.add('hidden')
         }
     })
+
+    indicators.forEach((indicator, index) => {
+        indicator.classList.remove('current-slide', 'animate') // Remove both classes from all
+        if (index === currentIndex) {
+            indicator.classList.add('current-slide', 'animate') // Add both classes to the current indicator
+        }
+    })
 }
 
 // Initial State
 updateCarousel()
 
-// Make cards clickable
 cards.forEach((card, index) => {
     card.addEventListener('click', () => {
         currentIndex = index // Set the clicked card as the focused one
         updateCarousel()
+    })
+})
+
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+        currentIndex = index; // Set the corresponding slide
+        updateCarousel();
     })
 })
