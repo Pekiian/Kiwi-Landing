@@ -192,20 +192,6 @@ html {
   filter: brightness(70%);
 }
 
-#cta-btn {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.8em 0;
-
-  font-size: 1.4rem;
-  font-weight: bold;
-
-  border: 1px solid var(--white);
-
-  animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
-  box-shadow: 0 0 0 0 white;
-}
-
 #header-btn {
   background-color: #1e681e;
   color: var(--white);

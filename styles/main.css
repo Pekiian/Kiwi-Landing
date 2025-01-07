@@ -45,7 +45,7 @@ main {
 .introduction {
     display: grid;
     place-content: center;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
 
     background: linear-gradient(-45deg, var(--black), var(--main-grey));
@@ -67,14 +67,27 @@ main {
 .introduction h2 {
     font-size: clamp(1rem, 2.5vw, 2rem);
     color: #afafaf;
-    margin: 1rem 0;
 }
+
+#cta-btn {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0.8em 0;
+  
+    font-size: 1.4rem;
+    font-weight: bold;
+  
+    border: 1px solid var(--white);
+  
+    animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+    box-shadow: 0 0 0 0 white;
+  }
 
 .arrow-down {
     width: 30px;
     height: 30px;
 
-    margin: 3rem auto auto auto;
+    margin: auto;
 
     border-right: 4px solid lightgray;
     border-bottom: 4px solid lightgray;
