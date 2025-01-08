@@ -1,12 +1,12 @@
 ## TO-DO
 3. Hacer andar el form de contacto.
-4. Responsiveness. 
+5. Comprar dominio.
 
 ### 1.0
 - Form:
     - [x] Sweet Alert.
     - [x] Validación de errores: https://www.geeksforgeeks.org/create-a-contact-form-using-html-css-javascript/.
-    - [ ] Enviar form.
+    - [x] Enviar form.
 - Responsiveness:
     - [x] Stats.
     - [x] Soluciones.
@@ -19,17 +19,20 @@
 - [x] Flecha de "Seguir bajando".
 
 ### 1.5
+- [ ] Animación de carga de formulario de envío.
 - [ ] Navegación fija en una bolita: https://codepen.io/b0y/pen/xxEYGXW.
-- [ ] Fondo de Kiwis en la Home.
-- [ ] Sección de problemas con fade on scroll.
+- [ ] Sección de problemas con fade on scroll: 
+    - https://codepen.io/brian-chen/pen/eKpMrX.
+    - https://codepen.io/modestas-bujanauskas/pen/wNmomR.
+- [ ] Fondo de Kiwis en la Home: https://codepen.io/udyux/pen/oxYzJo.
 - [ ] Empresas-Trabajamos Slider.
 
+- [ ] Better submit button: https://codepen.io/andrewmillen/pen/MoKLob.
 
 ### 2.0
 - [ ] Mudar a React.
 - [ ] Lenis Scroll.
 - [ ] Fondo de kiwis:
-    - https://codepen.io/udyux/pen/oxYzJo.
 - [ ] Hacer Kiwi-Bot en la página (inspiración en Aionixs-Bot). 
 
 ## Ideas

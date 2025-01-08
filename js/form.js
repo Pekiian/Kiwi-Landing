@@ -9,6 +9,7 @@ document.querySelector('.contact-form').addEventListener('submit', async (e) => 
     interesesElements.forEach(interes => intereses.push(interes.name))
 
     let isValid = true
+    console.log(name, email, description, intereses)
 
     if (name === '') {
       sendError('Necesitamos que pongas tu nombre')
@@ -27,14 +28,15 @@ document.querySelector('.contact-form').addEventListener('submit', async (e) => 
     }
 
     if (isValid) {
-      Swal.fire({
-          title: `¡Gracias ${name}!`,
-          text: `Te estaremos contactando en breve`,
-          icon: 'success',
-          confirmButtonText: 'Cerrar',
-          color: '#fff',
-          background: '#333',
-      })    
+
+      const emailParams = {
+        name,
+        email,
+        subject: `Recibiste un mensaje de ${name} desde la landing de Kiwi ConsultorIA`,
+        message: `${description} \n Intereses: ${intereses}`
+      }
+  
+      await sendEmail(emailParams)
     }
 })
 
@@ -48,4 +50,17 @@ function sendError(message) {
       color: '#fff',
       background: '#333',
   })
+}
+
+async function sendEmail(emailParams) {
+  await emailjs.send('service_8tnpwje', 'template_32feuh2', emailParams)
+
+  await Swal.fire({
+      title: `¡Gracias ${name}!`,
+      text: `Te estaremos contactando en breve`,
+      icon: 'success',
+      confirmButtonText: 'Cerrar',
+      color: '#fff',
+      background: '#333',
+  })  
 }
