@@ -1,5 +1,4 @@
 ## TO-DO
-3. Hacer andar el form de contacto.
 5. Comprar dominio.
 
 ### 1.0
@@ -19,20 +18,20 @@
 - [x] Flecha de "Seguir bajando".
 
 ### 1.5
-- [ ] Animación de carga de formulario de envío.
-- [ ] Navegación fija en una bolita: https://codepen.io/b0y/pen/xxEYGXW.
-- [ ] Sección de problemas con fade on scroll: 
-    - https://codepen.io/brian-chen/pen/eKpMrX.
-    - https://codepen.io/modestas-bujanauskas/pen/wNmomR.
-- [ ] Fondo de Kiwis en la Home: https://codepen.io/udyux/pen/oxYzJo.
-- [ ] Empresas-Trabajamos Slider.
+- Mejor UX:
+    - [ ] Better submit button: https://codepen.io/andrewmillen/pen/MoKLob.
+    - [ ] Navegación fija en una bolita: https://codepen.io/b0y/pen/xxEYGXW.
+    - [ ] Sección de problemas con fade on scroll: 
+        - https://codepen.io/brian-chen/pen/eKpMrX.
+        - https://codepen.io/modestas-bujanauskas/pen/wNmomR.
 
-- [ ] Better submit button: https://codepen.io/andrewmillen/pen/MoKLob.
+- Mejor diseño:
+    - [ ] Fondo de Kiwis en la Home: https://codepen.io/udyux/pen/oxYzJo.
+    - [ ] Empresas-Trabajamos Slider.
 
 ### 2.0
 - [ ] Mudar a React.
 - [ ] Lenis Scroll.
-- [ ] Fondo de kiwis:
 - [ ] Hacer Kiwi-Bot en la página (inspiración en Aionixs-Bot). 
 
 ## Ideas
